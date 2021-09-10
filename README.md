@@ -24,6 +24,13 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
     <li><a href="#usage">Usage</a>
       <ul>
         <li>
@@ -55,6 +62,27 @@ The engine provides multi-user creation, solving and deletion of little web-quiz
 * [Spring Boot](https://spring.io/projects/spring-boot)
 * [H2 database](https://www.h2database.com)
 
+<!-- GETTING STARTED -->
+## Getting Started
+
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+This is an example of how to list things you need to use the software and how to install them.
+* [IntelliJ Idea](https://jetbrains.com/ru-ru/idea/download/#section=windows)
+* [IntelliJ Idea Spring plugin](hhttps://jetbrains.com/help/idea/spring-support.html#spring-file-set)
+* [IntelliJ Idea Lombok plugin](https://plugins.jetbrains.com/plugin/6317-lombok)
+* [Postman](https://postman.com/downloads/)
+
+### Installation
+
+1. Open IntelliJ Idea
+2. Click on "Get from VCS" button
+3. Enter "https://github.com/Mimmey/WebQuizEngine.git" in the URL field, choose cloning path and click "Clone"
+4. Run project
+5. Open Postman and enjoy using
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -63,9 +91,9 @@ Here is a list of requests that you can use:
 
 Method | Request | Params or body | Description | Access
 ------------ | ------------- | ------------ | ------------ | ------------
-GET | api/quizzes | int page (optional, default 0), int pageSize(optional, default 10)  | returns paginated list of all quizzes made by all users (paging starts with 0) | only for authorised users
+GET | api/quizzes | int page _(optional, default 0)_, int pageSize _(optional, default 10)_  | returns paginated list of all quizzes made by all users (paging starts with 0) | only for authorised users
 GET | api/quizzes/{id} | — | gets a quiz by its id | for authorised users
-GET | api/quizzes/completed |  int page (optional, default 0), int pageSize(optional, default 10) | returns a list of successful solving attempts made by user  (paging starts with 0) | only for authorised users 
+GET | api/quizzes/completed |  int page _(optional, default 0)_, int pageSize _(optional, default 10)_ | returns a list of successful solving attempts made by user  (paging starts with 0) | only for authorised users 
 POST | api/quizzes | <a href="#quiz">Quiz</a> quiz | publishes a new quiz | only for authorised users
 POST | api/quizzes/{id}/solve | <a href="#answer">Answer</a> answer | solves specified quiz | only for authorised users
 POST | api/register | <a href="#answer">User</a> user | registers a new user | public
