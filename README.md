@@ -72,7 +72,7 @@ To get a local copy up and running follow these simple example steps.
 
 This is an example of how to list things you need to use the software and how to install them.
 * [IntelliJ Idea](https://jetbrains.com/ru-ru/idea/download/#section=windows)
-* [IntelliJ Idea Spring plugin](hhttps://jetbrains.com/help/idea/spring-support.html#spring-file-set)
+* [IntelliJ Idea Spring plugin](https://jetbrains.com/help/idea/spring-support.html#spring-file-set)
 * [IntelliJ Idea Lombok plugin](https://plugins.jetbrains.com/plugin/6317-lombok)
 * [Postman](https://postman.com/downloads/)
 
