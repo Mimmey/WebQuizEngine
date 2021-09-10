@@ -89,6 +89,10 @@ This is an example of how to list things you need to use the software and how to
 
 Program works on port 8889.
 
+Send requests using that template:
+
+<pre><code>localhost:8889/<i>request</i></code></pre>
+
 Here is a list of requests that you can use:
 
 Method | Request | Params or body | Description | Access
