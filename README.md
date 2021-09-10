@@ -46,7 +46,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This project was made in educational purposes. I really enjoyed creating it and hope you will enjoy using.
+This project was made in educational purposes. I really enjoyed while creating and hope you will enjoy using it.
 
 The engine provides multi-user creation, solving and deletion of little web-quizzes using HTTP requests.
 
