@@ -65,7 +65,6 @@ The engine provides multi-user creation, solving and deletion of little web-quiz
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
@@ -99,11 +98,8 @@ POST | api/quizzes/{id}/solve | <a href="#answer">Answer</a> answer | solves spe
 POST | api/register | <a href="#answer">User</a> user | registers a new user | public
 DELETE | api/quizzes/{id} | — | deletes a quiz by its id | only for authorised users
 
-
-
 ## Quiz
 Quiz is a special entity having the following structure:
-
 
 <pre><code>{
   "title": "<i>title</i>",
@@ -111,6 +107,8 @@ Quiz is a special entity having the following structure:
   "options": [<i>list of options</i>],
   "answer": [<i>list of answers, numeration starts with 0</i>]
 }</code></pre>
+
+All of the fields are required, number of _options_ should be equals or more than 2
     
 Example:
 
@@ -123,14 +121,24 @@ Example:
     
 ## Answer    
 
-Answer is an integer array: `{"answer": [0,2]}`
+Answer is an integer array: 
+
+<pre><code>{
+  "answer": [<i>list of options</i>]
+}</code></pre>
+
+Example:
+
+<pre><code>{
+  "answer": [0,2]
+}</code></pre>
 
 ## User
 
 User is:
 
 <pre><code>{
-  "email": "<i>email</i>",
+  "email": "<i>name</i>@<i>second-level-domain</i>.<i>top-level-domain</i>",
   "password": "<i>password</i>"
 }</code></pre>
     
