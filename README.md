@@ -58,7 +58,7 @@ This project was made in educational purposes. I really enjoyed while creating a
 
 The engine provides multi-user creation, solving and deletion of little web-quizzes using HTTP requests.
 
-## Built With
+### Built With
 
 * [Spring Boot](https://spring.io/projects/spring-boot)
 * [H2 database](https://www.h2database.com)
@@ -105,7 +105,7 @@ POST | api/quizzes/{id}/solve | <a href="#answer">Answer</a> answer | solves spe
 POST | api/register | <a href="#answer">User</a> user | registers a new user | public
 DELETE | api/quizzes/{id} | — | deletes a quiz by its id | only for authorised users
 
-## Quiz
+### Quiz
 Quiz is a special entity having the following structure:
 
 <pre><code>{
@@ -126,7 +126,7 @@ Example:
       "answer": [0,2]
     }
     
-## Answer    
+### Answer    
 
 Answer is an integer array: 
 
@@ -140,7 +140,7 @@ Example:
   "answer": [0,2]
 }</code></pre>
 
-## User
+### User
 
 User is:
 
