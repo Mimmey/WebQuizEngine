@@ -87,7 +87,7 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Program uses port 8889.
+The program uses port 8889.
 
 Send requests using that template:
 
