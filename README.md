@@ -98,7 +98,7 @@ Here is a list of requests that you can use:
 Method | Request | Params or body | Description | Access
 ------------ | ------------- | ------------ | ------------ | ------------
 GET | api/quizzes | int page _(optional, default 0)_, int pageSize _(optional, default 10)_  | returns paginated list of all quizzes made by all users (paging starts with 0) | only for authorised users
-GET | api/quizzes/{id} | — | gets a quiz by its id | for authorised users
+GET | api/quizzes/{id} | — | gets a quiz by its id | only for authorised users
 GET | api/quizzes/completed |  int page _(optional, default 0)_, int pageSize _(optional, default 10)_ | returns a list of successful solving attempts made by user  (paging starts with 0) | only for authorised users 
 POST | api/quizzes | <a href="#quiz">Quiz</a> quiz | publishes a new quiz | only for authorised users
 POST | api/quizzes/{id}/solve | <a href="#answer">Answer</a> answer | solves specified quiz | only for authorised users
